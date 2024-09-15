@@ -48,7 +48,8 @@ echo "MySQL configured and HTTPD started."
 echo "Adding IONCUBE to PHP..."
 
 # Download and install IONCUBE
-wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
+curl -L -O https://github.com/redhatmurali/radius-dma/raw/main/ioncube_loaders_lin_x86-64.tar.gz
+#wget http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz
 tar -xvzf ioncube_loaders_lin_x86-64.tar.gz
 mv ioncube/ioncube_loader_lin_5.4.so /usr/lib64/php/modules/
 chmod 777 /usr/lib64/php/modules/ioncube_loader_lin_5.4.so
@@ -69,7 +70,8 @@ echo "Downloading FreeRADIUS..."
 
 # Create temp directory and download FreeRADIUS
 mkdir -p ~/temp && cd ~/temp
-wget http://www.dmasoftlab.com/download/freeradius-server-2.2.0-dma-patch-2.tar.gz
+curl -L -O https://github.com/redhatmurali/radius-dma/raw/main/freeradius-server-2.2.0-dma-patch-2.tar.gz
+#wget http://www.dmasoftlab.com/download/freeradius-server-2.2.0-dma-patch-2.tar.gz
 tar -xvzf freeradius-server-2.2.0-dma-patch-2.tar.gz
 cd freeradius-server-2.2.0
 
@@ -105,6 +107,7 @@ cd ~/temp
 
 # Copy radiusmanager-4.1.6.gz to temp directory before running script
 # Unzip the radius manager installation package
+curl -L -O https://github.com/redhatmurali/radius-dma/raw/main/radiusmanager-4.1.6.gz
 tar zxvf radiusmanager-4.1.6.gz
 cd radiusmanager-4.1.6
 
