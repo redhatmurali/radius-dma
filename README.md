@@ -1,4 +1,7 @@
 # FreeRADIUS with DMA Patch and Radius Manager
+## Supported Operating System
+
+**Required OS:** CentOS 7.9 (x86_64)
 
 A collection of shell scripts and installation archives for setting up a FreeRADIUS-based environment with a DMA patch, Radius Manager, and supporting ionCube loaders.
 
